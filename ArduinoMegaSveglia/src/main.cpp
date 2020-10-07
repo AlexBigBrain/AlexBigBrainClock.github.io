@@ -43,7 +43,6 @@ void setup(void)
   radio.setDataRate(RF24_250KBPS);
   radio.openWritingPipe(0x544d52687CLL);
   radio.openReadingPipe(1, 0xABCDABCD71LL);
-  int dio = 0;
   radio.startListening();
 
   for (int x = 0; x < 5; x++)
